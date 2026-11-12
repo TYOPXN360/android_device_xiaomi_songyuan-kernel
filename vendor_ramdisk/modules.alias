@@ -119,6 +119,8 @@ alias mhi:IPCR qrtr_mhi
 alias of:N*T*Cqcom,canoe-tcsrcc tcsrcc_canoe
 alias of:N*T*Cqcom,canoe-tcsrccC* tcsrcc_canoe
 alias i2c:aw21024_led leds_w21024
+alias of:N*T*Ccharge,ut-test mca_ut_test
+alias of:N*T*Ccharge,ut-testC* mca_ut_test
 alias of:N*T*Cqcom,pmic-glink-debug pmic_glink_debug
 alias of:N*T*Cqcom,pmic-glink-debugC* pmic_glink_debug
 alias of:N*T*Cqcom,spmi-glink-debug pmic_glink_debug

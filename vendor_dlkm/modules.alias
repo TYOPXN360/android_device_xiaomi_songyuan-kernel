@@ -58,6 +58,8 @@ alias of:N*T*Cqcom,pmk8350-pwrkey-resin-bark pm8941_pwrkey
 alias of:N*T*Cqcom,pmk8350-pwrkey-resin-barkC* pm8941_pwrkey
 alias mhi:IPCR qrtr_mhi
 alias i2c:aw21024_led leds_w21024
+alias of:N*T*Ccharge,ut-test mca_ut_test
+alias of:N*T*Ccharge,ut-testC* mca_ut_test
 alias of:N*T*Csi,sia81xx sia91xx_dlkm
 alias of:N*T*Csi,sia81xxC* sia91xx_dlkm
 alias of:N*T*Csi,sia8100 sia91xx_dlkm

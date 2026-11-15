@@ -1,0 +1,24 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// QTI UAPI headers for songyuan.
+//
+// No kernel source is published for this device, so the only copy of these
+// headers is the tarball stock shipped. In-tree code needs them: ipacm and
+// libipanat include <linux/msm_ipa.h>, and the display HALs include the sde
+// and msm_drm_pp ones.
+//
+// The tree already has a genrule that unpacks the same tarball into
+// prebuilt_kernel_includes, but its input is read with Getenv, which a makefile
+// cannot set - the assignment only takes effect when the variable happens to be
+// exported in the shell that starts the build. When it is not, the genrule
+// produces nothing and ipacm fails on a missing header. Reading the headers
+// straight out of the device tree removes that dependency entirely.
+cc_library_headers {
+    name: "songyuan_qti_uapi_headers",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["uapi-headers/usr/include"],
+}

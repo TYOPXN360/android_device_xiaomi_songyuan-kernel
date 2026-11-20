@@ -20,5 +20,5 @@ cc_library_headers {
     name: "songyuan_qti_uapi_headers",
     vendor_available: true,
     recovery_available: true,
-    export_include_dirs: ["uapi-headers/usr/include"],
+    export_include_dirs: ["kernel-headers"],
 }
